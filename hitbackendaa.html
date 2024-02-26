@@ -1,0 +1,30 @@
+<html>
+    <script>
+        // function populateDiv(){
+        //     const a = document.getElementById("firstnumber").value;
+        //     const b = document.getElementById("firstnumber").value;
+        //     // const element = document.getElementById("finalsum");
+        //     // element.innerHTML = parseInt(a) + parseInt(b);
+        //     fetch("https://sum-server.100xdevs.com/sum?a=" +a + "&b=" +b).then(function(response){
+        //         response.text().then(function(ans){
+        //             doucment.getElementById("finalsum").innerHTML = ans;
+        //         })
+        //     });
+        // }
+        async function populateDiv(){
+            const a = document.getElementById("firstnumber").value;
+            const b = document.getElementById("firstnumber").value;
+
+            const response = fetch("https://sum-server.100xdevs.com/sum?a=" +a + "&b=" +b);
+            const ans = response.text();
+            document.getElementById("finalsum").innerHTML = ans;
+
+        }
+    </script>
+    <body>
+        <input  id ="firstnumber"type ="text" placeholder ="First number"></input> <br></br>
+        <input id ="secondnumber"type ="text" placeholder ="Second number"></input> <br></br>
+        <button onclick ="populateDiv()">Calculate Sum</button> <br></br>
+        <div id = "finalsum"></div>
+    </body>
+</html>
