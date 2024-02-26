@@ -7,7 +7,7 @@
             // element.innerHTML = parseInt(a) + parseInt(b);
             fetch("https://sum-server.100xdevs.com/sum?a=" +a + "&b=" +b).then(function(response){
                 response.text().then(function(ans){
-                    doucment.getElementById("finalsum").innerHTML = ans;
+                    document.getElementById("finalsum").innerHTML = ans;
                 })
             });
         }
