@@ -15,8 +15,8 @@
             const a = document.getElementById("firstnumber").value;
             const b = document.getElementById("firstnumber").value;
 
-            const response = fetch("https://sum-server.100xdevs.com/sum?a=" +a + "&b=" +b);
-            const ans = response.text();
+            const response =   await fetch("https://sum-server.100xdevs.com/sum?a=" +a + "&b=" +b);
+            const ans = await response.text();
             document.getElementById("finalsum").innerHTML = ans;
 
         }
