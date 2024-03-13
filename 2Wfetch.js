@@ -16,3 +16,5 @@ async function main(){
     const json = await response.json();
     console.log(json.todos.length);
 }
+
+main();
