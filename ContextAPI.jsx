@@ -1,6 +1,8 @@
 import { Suspense, useContext } from "react"
 import { CountContext } from "./context";
 import {BrowserRouter, Routes, Route, useNavigate} from 'react-router-dom'
+
+//LAZY-LOADING
 // const Dashboard = React.lazy(()=> import('./components/Dashboard'))
 // const Landing = React.lazy(()=>import('./components/Landing'))
 
