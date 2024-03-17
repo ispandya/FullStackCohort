@@ -3,6 +3,7 @@ import {useState, useEffect, useMemo} from "react"
 
 
 function App() {
+  // const [count, setCount] = useState();
   const [count, setCount] = useState(0);
   function logsomething(){
     console.log("child clicked")
