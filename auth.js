@@ -1,6 +1,6 @@
+const express = require("express");
 const exp = require("constants");
 const { ALL } = require("dns");
-const express = require("express");
 const jwt = require("jsonwebtoken");
 const jwtPassword = "123456";
 
