@@ -1,3 +1,4 @@
+//EXPRESS GET route
 const express = require("express");
 const app = express();
 
